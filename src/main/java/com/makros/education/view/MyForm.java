@@ -32,6 +32,7 @@ public class MyForm extends JFrame {
         femme.setToolTipText("This RadioButton is enteded to select User gender as Female ");
         radioGroup.add(homme);
         radioGroup.add(femme);
+        homme.setSelected(true);
 
         JPanel titlePanel=new JPanel();
         titlePanel.setLayout(new FlowLayout(FlowLayout.CENTER));

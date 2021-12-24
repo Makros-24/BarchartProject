@@ -19,9 +19,9 @@ public class MyDataBase {
     private PreparedStatement preparedStatement = null;
     private ResultSet resultSet = null;
 
-    private String driver = "org.postgresql.Driver";
-    private String driverPrefix = "postgresql";
-    private String host = "localhost:5432/university";
+    private String driver = "org.sqlite.JDBC";
+    private String driverPrefix = "sqlite";
+    private String host = this.getClass().getClassLoader().getResource("examen").getPath();
     private String user = "postgres";
     private String passwd = "postgres";
 
@@ -37,8 +37,7 @@ public class MyDataBase {
         }
 
         return DriverManager
-                .getConnection("jdbc:"+ driverPrefix +"://" + host + "?"
-                        + "user=" + user + "&password=" + passwd );
+                .getConnection("jdbc:"+ driverPrefix +"://" + host);
     }
 
     public int ajouter(Personne personne){

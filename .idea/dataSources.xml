@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/university</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="SQLite - examen" uuid="65451e4f-a347-4682-97da-d8d79b53f09f">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\mohamed.iben-el-abed\IdeaProjects\BasicJdbcServer\src\main\resources\examen</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

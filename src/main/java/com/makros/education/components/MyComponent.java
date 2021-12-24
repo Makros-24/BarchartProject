@@ -70,6 +70,12 @@ public class MyComponent extends JComponent {
 
     }
 
+    /**
+     *
+     * @param nbrPersonnes
+     * @param labelX
+     * @param labelY
+     */
     public void axesXY(int nbrPersonnes,String labelX,String labelY){
         drawArrowLine(g2,10,newHeight,newWidth,newHeight,2,4);
         drawArrowLine(g2,10,newHeight,10,10, 4,6);
@@ -85,6 +91,16 @@ public class MyComponent extends JComponent {
         g2.drawString(String.valueOf(nbrPersonnes) ,20,50);
     }
 
+    /**
+     *
+     * @param g Graphics pour dessigner
+     * @param x1 point 1 du ligne
+     * @param y1 point 1 du ligne
+     * @param x2 point 2 du ligne
+     * @param y2 point 2 du ligne
+     * @param d diamétre du polygone
+     * @param h hauteur du polygone
+     */
     private void drawArrowLine(Graphics g, int x1, int y1, int x2, int y2, int d, int h) {
         int dx = x2 - x1;
         int dy = y2 - y1;

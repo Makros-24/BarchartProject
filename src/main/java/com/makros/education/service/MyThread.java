@@ -51,6 +51,7 @@ public class MyThread extends Thread {
 
         //Cette methode est commenté vue que si les axes ne sont pas
         //responsive a la resize de la fenetre donc elle deplacer vers la classe MyComponent
+        //Apres des testes elle peut fonctionner mais sa sera mieux dans le composant
         /* axesXY(nbrPersonnes,"Genre","Nombre de personnes"); */
 
     }
